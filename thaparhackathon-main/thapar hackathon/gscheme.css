@@ -1,0 +1,31 @@
+*{
+    margin:10px;
+    padding: 5px;
+    font-family:'poppins',sans-serif;
+    box-sizing:border-box;
+}
+body{
+    background:linear-gradient( rgb(109, 181, 109),rgb(228, 216, 216),rgb(109, 181, 109));
+    color:black;
+    overflow-x: hidden;
+
+}
+#header{
+    width:100%;
+    height:100vh;
+    background-size: cover;
+    background-position: center;
+}
+.container{
+    padding:10  px 10%;
+    padding-left: 50%;
+}
+#header{
+    width:100%;
+    height:100vh;
+    background-size: cover;
+    background-position: center;
+}
+.heading{
+    text-align: center;
+}

@@ -1,0 +1,161 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Store</title>
+    <style>
+        body{
+            font-family: "Rubik", sans-serif;
+            background: linear-gradient(rgb(188, 255, 188),white,rgb(188, 255, 188));
+        }
+        .product-container {
+            display: flex;
+            flex-wrap: wrap;
+            margin: -15px;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .product-card {
+            width: 350px;
+            height: 300px;
+            /* 4 cards in a row */
+            padding: 15px;
+            margin: 20px;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            position: relative;
+            background-color: rgba(134, 134, 134, 0.135);
+            box-shadow: 5px 5px 8px grey;
+        }
+
+
+        .image-container {
+            height: 250px;
+            width: 100%;
+
+        }
+
+        .text-container {
+            padding: 10px;
+        }
+
+        .product-card img {
+            width: 100%;
+            height: 100%;
+            position: relative;
+        }
+
+        .product-card h3 {
+            font-size: 18px;
+            margin: 10px 0;
+        }
+
+        .product-card p {
+            font-size: 16px;
+        }
+
+        header {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        header h2 {
+            font-size: 2rem;
+        }   
+
+        .logo {
+            max-width: 150px;
+            width: 50px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <img src="images/cropeed logo.png" alt="Company Logo" class="logo">
+        <h2>Svaasthy Store</h2>
+    </header>
+    <section class="text-gray-600 body-font">
+        <div class="container px-5 py-24 mx-auto">
+            <div class="product-container">
+                <div class="product-card">
+                    <div class="image-container">
+                        <img src="./images/download.jpeg" alt="Paracetamol">
+                    </div>
+                    <div class="text-container">
+
+                        <h3>Paracetamol</h3>
+                        <p>Rs.10 per strip</p>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="image-container">
+
+                        <img src="./images/images.jpeg" alt="Dettol">
+                    </div>
+                    <div class="text-cotainer">
+
+                        <h3>Dettol(Buy 1 get 1 free)</h3>
+                        <p>Rs.40</p>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="image-container">
+                        <img src="./images/images1.jpeg" alt="Syrenge">
+
+                    </div>
+                    <div class="text-container">
+                        <h3>Syrenge</h3>
+                        <p>Rs.12 per pc</p>
+                    </div>
+
+
+                </div>
+                <div class="product-card">
+                    <div class="image-container">
+                        <img src="./images/download1.jpeg" alt="Painkiller">
+
+                    </div>
+                    <div class="text-container">
+                        <h3>Painkiller</h3>
+                        <p>Rs.15 per strip</p>
+                    </div>
+
+
+                </div>
+                <div class="product-card">
+                    <div class="image-container">
+                        <img src="./images/download2.jpeg" alt="Bandage">
+
+                    </div>
+                    <div class="text-container">
+                        <h3>Fast Recovery Bandages</h3>
+                        <p>Rs.30 per pc</p>
+
+                    </div>
+
+
+                </div>
+                <div class="product-card">
+                    <div class="image-container">
+                        <img src="./images/images2.jpeg" alt="Glucose">
+
+                    </div>
+                    <div class="text-container">
+                        <h3>Glucose D</h3>
+                        <p>Rs.50</p>
+                    </div>
+                    </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

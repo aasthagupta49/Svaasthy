@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Feedback Form</title>
+    <link rel="stylesheet" href="feedback.css" />
+  </head>
+  <body>
+    <h1>Feedback Form</h1>
+    <form id="feedbackForm">
+      First Name :
+      <input type="text" name="firstname" placeholder="Enter name here" />
+      Second Name :
+      <input type="text" name="secondname" placeholder="Enter surname here" />
+      <br /><br />
+      <input type="radio" name="gender" value="male" />Male
+      <br />
+      <input type="radio" name="gender" value="female" />Female
+      <br /><br />
+      Email:  
+      <input type="email" name="mail" required placeholder="e-mail address" />
+      <br /><br />
+      Comment :<br />
+      <textarea rows="6" cols="50" name="commentfield"></textarea>
+      <br />
+      <select name="State">
+        <option value=" New Delhi">New Delhi</option>
+        <option value=" Haryana ">Haryaa</option>
+        <option value=" Punjab ">Punjab</option>
+        <option value=" Himachal Pradesh">Himachal Pradesh</option>
+      </select>
+      <br /><br />
+      <input type="button" value="Submit"  />
+      <input type="button" value="Preview" onclick="displayFormData()" />
+      
+      <input type="reset" value="Reset" onclick="clearformdata()" />
+    </form>
+
+    <div id="formDataDisplay" style="border: 2px solid black;">
+    
+    </div>
+    
+    <script>
+      function displayFormData() {
+        var form = document.getElementById("feedbackForm");
+        var formDataDisplay = document.getElementById("formDataDisplay");
+        formDataDisplay.innerHTML = ""; 
+        formDataDisplay.innerText="Preview ";
+        for (var i = 0; i < form.elements.length; i++) {
+          if (form.elements[i].type !== "button" && form.elements[i].type !== "reset") {
+            formDataDisplay.innerHTML +=
+              "<br>"+
+              "<strong>" +
+              form.elements[i].name.charAt(0).toUpperCase() +
+              form.elements[i].name.slice(1) +
+              ":</strong> " +
+              form.elements[i].value +
+              "<br />";
+          }
+        }
+      }
+
+      function clearformdata(){
+        formDataDisplay.innerHTML="";
+      }
+    </script>
+  </body>
+</html>
